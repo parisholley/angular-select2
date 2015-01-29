@@ -61,6 +61,10 @@ angular.module("rt.select2", [])
                     opts.placeholder = attrs.placeholder;
                 }
 
+                if (attrs.allowClear) {
+                    opts.allowClear = attrs.allowClear;
+                }
+
                 var modelFn = $parse(attrs.ngModel);
 
                 var filterOptions = $parse(attrs.optionsFilter);
